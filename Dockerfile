@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER bluebu <bluebuwang@gmail.com>
+MAINTAINER Chuan.Li <lichuanchou@163.com>
 
 #------------------------------------------------------------------------------
 # Environment variables:
