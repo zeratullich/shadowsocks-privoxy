@@ -18,5 +18,5 @@ docker pull zeratullich/shadowsocks-privoxy
 ## Run:
 
 ~~~
-docker run -i -t -e SERVER_ADDR=ss.server.ip -e SERVER_PORT=port -e PASSWORD=123456 zeratullich/shadowsocks-privoxy
+docker run -i -t -e SERVER_ADDR=ss.server.ip -e SERVER_PORT=port -e PASSWORD=123456 -e METHOD=chacha20-ietf-poly1305 zeratullich/shadowsocks-privoxy
 ~~~
