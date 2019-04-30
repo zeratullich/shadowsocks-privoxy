@@ -14,6 +14,10 @@ RUN \
 
 RUN pip install https://github.com/shadowsocks/shadowsocks/archive/master.zip -U
 
+COPY gfwlist.action /etc/privoxy/
+
+RUN echo 'actionsfile gfwlist.action' >> /etc/privoxy/config
+
 ENV SERVER_ADDR= \
     SERVER_PORT=8899  \
     METHOD=aes-256-cfb \
