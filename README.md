@@ -2,12 +2,12 @@
 
 ## Info:
 
-shadowsocks client for socks5 proxy
-privoxy for http proxy
-Only 16MB size
-Based on [shadowsocks-privoxy](https://github.com/bluebu/shadowsocks-privoxy)
-Able to support more methods (Such: chacha20-ietf-poly1305,aes-192-gcm)
-**Attention**: Please update [gfwlist2privoxy](https://github.com/zfl9/gfwlist2privoxy) for gfwlist.action when use it for Dockerfile !!
++ shadowsocks client for socks5 proxy
++ privoxy for http proxy
++ Only 16MB size
++ Based on [shadowsocks-privoxy](https://github.com/bluebu/shadowsocks-privoxy)
++ Able to support more methods (Such: chacha20-ietf-poly1305,aes-192-gcm)
++ **Attention**: Please update [gfwlist2privoxy](https://github.com/zfl9/gfwlist2privoxy) for gfwlist.action when used !!
 
 ## Image:
 
