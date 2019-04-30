@@ -14,9 +14,6 @@ RUN \
 
 RUN pip install https://github.com/shadowsocks/shadowsocks/archive/master.zip -U
 
-COPY gfwlist.action /etc/privoxy/
-
-RUN echo 'actionsfile gfwlist.action' >> /etc/privoxy/config
 
 ENV SERVER_ADDR= \
     SERVER_PORT=8899  \
@@ -29,6 +26,10 @@ ENV SERVER_ADDR= \
 #------------------------------------------------------------------------------
 
 ADD rootfs /
+
+COPY gfwlist.action /etc/privoxy/
+
+RUN sed -i '$a\actionsfile gfwlist.action' /etc/privoxy/config
 
 #------------------------------------------------------------------------------
 # Expose ports and entrypoint:
