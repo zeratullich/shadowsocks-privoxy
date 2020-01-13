@@ -215,7 +215,7 @@ enable-proxy-authentication-forwarding 0
 #       forward           localhost/     .
 #
 #
-# forward-socks5  / 127.0.0.1:7070  .
+forward-socks5  / 127.0.0.1:7070  .
 # forward           /     .
 forwarded-connect-retries  0
 
