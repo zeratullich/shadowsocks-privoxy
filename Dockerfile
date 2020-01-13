@@ -27,7 +27,7 @@ ENV SERVER_ADDR= \
 
 ADD rootfs /
 
-COPY gfwlist.action /etc/privoxy/
+#COPY gfwlist.action /etc/privoxy/
 
 #RUN sed -i '$a\actionsfile gfwlist.action' /etc/privoxy/config
 
