@@ -29,7 +29,7 @@ ADD rootfs /
 
 COPY gfwlist.action /etc/privoxy/
 
-RUN sed -i '$a\actionsfile gfwlist.action' /etc/privoxy/config
+#RUN sed -i '$a\actionsfile gfwlist.action' /etc/privoxy/config
 
 #------------------------------------------------------------------------------
 # Expose ports and entrypoint:
